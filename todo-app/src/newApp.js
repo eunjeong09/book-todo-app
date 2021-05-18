@@ -1,7 +1,12 @@
 import React from 'react';
 import TodoTemplate from './newComponents/TodoTemplate';
+import TodoInsert from './newComponents/TodoInsert';
 
 const App = () => {
-    return <TodoTemplate>Todo App 만들기</TodoTemplate>
+    return (
+        <TodoTemplate>
+            <TodoInsert />
+        </TodoTemplate>
+    )
 }
 export default App;

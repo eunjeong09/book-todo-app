@@ -14,6 +14,6 @@
 ## 복습을 통한 파일 및 컴포넌트 구조
 1. 첫번째 : App.js - component folder
 2. 두번째 : newApp.js - newComponent folder
-3. 세번째 : testApp.js - testComponet folder
+3. 세번째 : testApp.js - testComponent folder
 
 ## React storybook

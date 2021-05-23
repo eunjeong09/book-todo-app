@@ -6,9 +6,8 @@ import TodoList from './newComponents/TodoList';
 const App = () => {
     return (
         <TodoTemplate>
-            <TodoInsert>
-                <TodoList />
-            </TodoInsert>
+            <TodoInsert />
+            <TodoList />
         </TodoTemplate>
     )
 }

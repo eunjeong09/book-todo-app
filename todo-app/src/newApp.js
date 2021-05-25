@@ -3,6 +3,8 @@ import TodoTemplate from './newComponents/TodoTemplate';
 import TodoInsert from './newComponents/TodoInsert';
 import TodoList from './newComponents/TodoList';
 
+// 코드리뷰 브런치 테스트
+
 const App = () => {
     const [todos, setTodos] = useState([
         {

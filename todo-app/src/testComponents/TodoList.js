@@ -1,7 +1,9 @@
 import React from 'react';
+import TodoItem from './TodoItem';
+import './TodoList.scss';
 
 const TodoList = () => {
-    return(
+    return (
         <div>todo list</div>
     )
 }

@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TodoTemplate from './testComponents/TodoTemplate';
 import TodoInsert from './testComponents/TodoInsert';
 import TodoList from './testComponents/TodoList';
 
 const App = () => {
+    const [todos, setTodos] = useState([
+        {
+            id: 1,
+            text: '할일1',
+            checked: true,
+        }, {
+            id: 2,
+            text: '할일2',
+            checked: false
+        },
+        {
+            id: 3,
+            text: '할일3',
+            checked: false
+        }
+    ])
     return (
         <TodoTemplate>
             <TodoInsert />
-            <TodoList />
+            <TodoList todos={todos} />
 
         </TodoTemplate>
 

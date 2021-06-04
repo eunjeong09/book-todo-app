@@ -8,7 +8,16 @@ import cn from 'classnames';
 
 const TodoItem = () => {
     return (
-        <div>todo item</div>
+        <div className="TodoItem">
+            <div>
+                {/* {checked ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />} */}
+                <div>todoItem</div>
+
+            </div>
+            <div>
+                <MdRemoveCircleOutline />
+            </div>
+        </div>
     )
 }
 export default TodoItem;

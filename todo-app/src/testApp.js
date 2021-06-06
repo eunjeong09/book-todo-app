@@ -4,24 +4,27 @@ import TodoInsert from './testComponents/TodoInsert';
 import TodoList from './testComponents/TodoList';
 
 const App = () => {
-    const [todos, setTodos] = useState([
-        {
-            id: 1,
-            text: '할일1',
-            checked: true,
-        }, {
-            id: 2,
-            text: '할일2',
-            checked: false
-        },
-        {
-            id: 3,
-            text: '할일3',
-            checked: false
-        }
-    ]);
+    // const [todos, setTodos] = useState([
+    //     {
+    //         id: 1,
+    //         text: '할일1',
+    //         checked: true,
+    //     }, {
+    //         id: 2,
+    //         text: '할일2',
+    //         checked: false
+    //     },
+    //     {
+    //         id: 3,
+    //         text: '할일3',
+    //         checked: false
+    //     }
+    // ]);
 
-    const nextId = useRef(4);
+    const [todos, setTodos] = useState([]);
+
+
+    const nextId = useRef(1);
     const onInsert = useCallback(
         text => {
             const todo = {

@@ -1,8 +1,9 @@
 import React from 'react';
 
-const TodoItem = () => {
+const TodoItem = ({todo}) => {
+    const {id, text, checked} = todo;
     return(
-        <div>TodoItem</div>
+        <div>{text}</div>
     )
 }
 export default TodoItem;

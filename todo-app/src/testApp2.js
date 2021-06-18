@@ -7,7 +7,7 @@ import TodoList from './testComponents2/TodoList';
 const App = () => {
     const [todos, setTodos] = useState([
         { id: 1, text: '할일1', checked: true },
-        { id: 2, text: '할일2', checked: true },
+        { id: 2, text: '할일2', checked: false },
         { id: 3, text: '할일3', checked: true }
     ]);
 
@@ -32,12 +32,19 @@ const App = () => {
 
     )
 
+    const onToggle = useCallback(
+        id => {
+            setTodos(todos.map(todo =>
+                todo.id === id ? { ...todo, checked: !todo.checked } : todo
+            ))
+        }, [todos]
 
+    )
 
     return (
         <TodoTemplate>
             <TodoInsert onInsert={onInsert} />
-            <TodoList todos={todos} onRemove={onRemove} />
+            <TodoList todos={todos} onRemove={onRemove} onToggle={onToggle} />
         </TodoTemplate>
     )
 }

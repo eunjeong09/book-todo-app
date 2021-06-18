@@ -7707,6 +7707,11 @@
   "resolved" "https://registry.yarnpkg.com/min-indent/-/min-indent-1.0.1.tgz"
   "version" "1.0.1"
 
+"minami@1.2.3":
+  "integrity" "sha1-mbbc37LwpU2hycj3qjoyd4eq+fg="
+  "resolved" "https://registry.npmjs.org/minami/-/minami-1.2.3.tgz"
+  "version" "1.2.3"
+
 "mini-css-extract-plugin@0.11.3":
   "integrity" "sha512-n9BA8LonkOkW1/zn+IbLPQmovsL0wMb9yx75fMJQZf2X1Zoec9yTZtyMePcyu19wPkmFbzZZA6fLTotpFhQsOA=="
   "resolved" "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.11.3.tgz"

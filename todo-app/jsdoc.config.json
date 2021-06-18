@@ -1,0 +1,9 @@
+{
+    "source": {
+        "include": ["./src"]
+    },
+    "opts": {
+        "encoding": "utf8", 
+        "template": "node_modules/minami"
+    }
+}

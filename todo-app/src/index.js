@@ -4,7 +4,8 @@ import './index.css';
 // import App from './App';
 // import App from './newApp';
 // import App from './testApp';
-import App from './testApp2';
+// import App from './testApp2';
+import App from './realTestApp';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

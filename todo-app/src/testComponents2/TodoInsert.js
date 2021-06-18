@@ -6,15 +6,24 @@ const TodoInsert = ({ onInsert }) => {
 
     const onSubmit = useCallback(
         e => {
+            onInsert(value);
+            setValue('');
+
             e.preventDefault();
-            console.log('submit');
         },
         [onInsert, value],
     )
 
+    const onChange = useCallback(
+        e => {
+            setValue(e.target.value);
+        }, []
+
+    )
+
     return (
         <form onSubmit={onSubmit}>
-            <input placeholder="할일을 입력하세요" />
+            <input placeholder="할일을 입력하세요" onChange={onChange} />
             <button>
                 <MdAdd />
             </button>

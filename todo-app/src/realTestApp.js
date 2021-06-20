@@ -3,6 +3,23 @@ import TodoTemplate from './realTestComponents/TodoTemplate';
 import TodoInsert from './realTestComponents/TodoInsert';
 import TodoList from './realTestComponents/TodoList';
 
+/*
+App 
+-> useState(todos, setTodos)
+-> nextId
+-> onInsert
+-> onRemove
+-> onToggle
+
+TodoTemplate : 전체감싸기
+TodoInsert
+-> useState(value, setValue)
+-> onChange
+-> onSubmit
+
+
+*/
+
 const App = () => {
     const [todos, setTodos] = useState([
         {

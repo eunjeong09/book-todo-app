@@ -47,10 +47,14 @@ const App = () => {
 
     const onToggle = useCallback(
         id => {
-            console.log(id);
+            setTodos(
+                todos.map(todo =>
+                    todo.id === id ? { ...todo, checked: !todo.checked } : todo,
+                ),
+            );
         },
-        [todos]
-    )
+        [todos],
+    );
 
 
 

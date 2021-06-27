@@ -4,6 +4,15 @@ import TodoInsert from './finalComponents/TodoInsert';
 import TodoList from './finalComponents/TodoList';
 
 const App = () => {
+    /* 
+        todos, setTodos(useState)
+        nextId
+        onInsert(TodoInsert)
+        onRemove(TodoList)
+        onToggle(TodoList)
+    */
+    
+
     const [todos, setTodos] = useState(
         [{
             id: 1,

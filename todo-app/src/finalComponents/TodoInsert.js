@@ -1,6 +1,11 @@
 import React, { useState, useCallback } from 'react';
 
 const TodoInsert = ({ onInsert }) => {
+    /*
+        value, setValue(useState),
+        onSubmit(form)
+        onChange(input) 
+     */
     const [value, setValue] = useState('');
 
     const onSubmit = useCallback(
